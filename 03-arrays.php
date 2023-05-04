@@ -66,7 +66,7 @@ usando print_r() e var_dump()</h2>
 <br> <br>
 <?=var_dump($bandas)?>
 
-<!-- Tag <pre> Com formatação usando tag
+<!-- Tag <pre> formata
 e torna mais legível a saída -->
 <pre><?=print_r($bandas)?></pre>
 <pre><?=var_dump($bandas)?></pre>
