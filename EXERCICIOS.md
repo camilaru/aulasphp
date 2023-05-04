@@ -1,6 +1,26 @@
 # Exercícios de PHP
 
 
+## Exercício 3
+
+Crie um novo arquivo chamado **exercicio03.php** e nele faça uma programação que permita avaliar o valor de um salário e calcular um novo valor de salário baseado nos seguintes critérios:
+
+- Se salário menor que 1500, calcule um aumento de 15% 
+- Senão, se salário menor ou igual a 3000, calcule um aumento de 10%
+- Senão calcule um aumento de 5%
+
+Mostre no HTML uma mensagem informando o valor do salário antigo (antes do reajuste) e do novo salário (após o reajuste).
+
+### DICAS (LEIA!!)
+
+- Você pode usar duas variáveis (ex: `$salario` e `$novoSalario`), uma para o salário atual (`$salario`) e outra para receber o cálculo do novo salário reajustado (`$novoSalario`)
+- Para calcular o `$novoSalario`, você pode usar as seguintes fórmulas:
+    - Para aumento de **15%**, **multiplique** o `$salario` por **1.15**
+    - Para aumento de **10%**, **multiplique** o `$salario` por **1.10**
+    - Para aumento de **5%**, **multiplique** o `$salario` por **1.05**
+
+---
+
 ## Exercício 2
 
 Crie um novo arquivo chamado **exercicio02.php** e nele faça um array (numérico OU associativo) chamado `dados` contendo as seguintes informações:
