@@ -21,15 +21,18 @@
     </style>
 </head>
 <body>
-    <h1>Condicionais PHP</h1>
+    <h1>Condicionais Versão 2 PHP</h1>
     <hr>
 
     <h2>Simples</h2>
+    
     <?php
-     $numero = 1;
+     $numero = 10;
      if($numero>=5){
-        echo "<p>numero é maior/igual a 5</p>";  
-     }
+    ?>
+        <p>numero é maior/igual a 5</p>
+    <?php  
+    }
     ?>
 
     <h2>Composta</h2>
@@ -37,22 +40,26 @@
     $produto = "Ultrabook";
     $qtdEmEstoque = 10; //o que temos no momento
     $qtdCritica = 5; //Minimo necessario
-
-    echo "<h3>Produto: $produto</h3>";
-    echo "<h4>Estoque: $qtdEmEstoque</h4>";
-
+    ?>
+    
+    <h3>Produto: <?=$produto?></h3>
+    <h4>Estoque: <?=$qtdEmEstoque?></h4>
+    
+    <?php
      if( $qtdEmEstoque < $qtdCritica ){
-        echo "<p class='repor'>É necessario comprar/repor!</p>";
-
+    ?>
+        <p class='repor'>É necessario comprar/repor!</p>
+    <?php
         if ( $qtdEmEstoque == 0 ){
-            echo"<p><spam class='urgente'>URGENTE!</spam></p>";
-        
+    ?>        
+            <p><spam class="urgente">URGENTE!</spam></p>  
+    <?php
         }
-
      } else {
-        echo "<p class='normal'>estoque normal!</p>";
+    ?>
+        <p class='normal'>estoque normal!</p>
+    <?php
      }
-
     ?>
 
     <h2>Encadeada</h2>
@@ -73,13 +80,12 @@
         case "Tv" : $garantia = 2; break;
         default : $garantia = 1; break;
         }
+        ?>
+   <p>O <?=$produto?> tem garantia de<?=$garantia?> ano(s)</p>
 
 
-    echo "<p>O $produto tem garantia de $garantia ano(s)</p>";
 
-
-
-    ?>
+   
 
 </body>
 </html>
