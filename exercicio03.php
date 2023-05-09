@@ -14,19 +14,26 @@
     <?php
     $salario = 2000;
     if ($salario < 1500) {
-        $novosalario = $salario * 1.15;
+        $novoSalario = $salario * 1.15;
     ?>
-        <p>Sálario antigo: <?= $salario ?>| Sálario atual: <?= $novosalario ?> </p>
+        <p>Sálario antigo: <?= $salario ?>| Sálario atual: <?= $novoSalario ?> </p>
     <?php
     } elseif ($salario <= 3000) {
-        $novosalario = $salario * 1.10;
+        $novoSalario = $salario * 1.10;
     ?>
-        <p>Sálario antigo: <?= $salario ?>| Sálario atual: <?= $novosalario ?> </p>
+        <p>Sálario antigo: <?= $salario ?>| Sálario atual: <?= $novoSalario ?> </p>
     <?php
     } else {
-        $novosalario = $salario * 1.05;
+        $novoSalario = $salario * 1.05;
     }
     ?>
+    <p>Salário antigo:
+    <?=number_format($salario, 2, ",",".")?>
+    </p>
+
+    <p>Salário novo:
+    <?=number_format($novoSalario, 2, ",","." )?>
+    </p>
 
 </body>
 
